@@ -1,3 +1,5 @@
+@import 'variables';
+
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -19,11 +21,11 @@ $dark:                            #444 !default;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+
 
 body {
-  background-color: $dark;
-  color: red;
+  background-color: $stable;
+  color: $light;
   font-family: Georgia;
   font-size: 30px;
 }

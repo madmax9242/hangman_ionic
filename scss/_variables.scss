@@ -1,1 +1,72 @@
-_variables.scss
+/* Colors */
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$color-dark-1: #212121;
+$color-dark-2: #242424;
+$color-dark-3: #292929;
+$color-dark-4: #121212;
+$color-dark-5: #333333;
+
+$color-gray-1: #d5dbe3;
+$color-gray-2: #e9eef5;
+$color-gray-3: #aaaaaa;
+
+$color-yellow-1: #f2bf3c;
+$color-yellow-2: #ffe394;
+$color-yellow-3: #ffda6f;
+$color-yellow-4: #fead38;
+$color-yellow-5: #fcd365;
+
+$color-yellow-6: #fcf8e3;
+$color-yellow-7: #ec971f;
+$color-yellow-8: #d58512;
+$color-yellow-9: #8a6d3b;
+
+$color-teal-1: #6fd1cc;
+$color-teal-2: #3dd9cb;
+
+$color-blue-1: #2770ca;
+$color-blue-2: #659ecb;
+
+$color-red-1: #2e1a1d;
+$color-red-2: #371f23;
+$color-red-3: #b8858e;
+$color-red-4: #c9302c;
+$color-red-5: #ac2925;
+$color-red-6: #f2dede;
+
+$color-red-7: #993333;
+$color-red-8: #731d27;
+$color-red-9: #d93649;
+
+$color-green-1: #83ae4b;
+$color-green-2: #dff0d8;
+$color-green-3: #449d44;
+$color-green-4: #398439;
+$color-green-5: #6d9935;
+$color-green-6: #b3da81;
+
+$assertive: #cd3a48;
+$positive: #68adc5;
+
+/* Sizes: Heights, Widths... */
+$bar-height: 44px;
+$nav-bar-height: 60px;
+$nav-bar-with-subheader-height: 92px;
+$nav-bar-with-image-card-height: 215px;
+$nav-bar-image-size: 40px;
+
+$bar-footer-bottom: 44px;
+$bar-subsubfooter-bottom: 88px;
+
+$card-image-title-height: 40px;
+
+$form-control-height: 34px;
+$form-control-height-lg: 48px;
+$form-label-height: 30px;
+
+$title-font-size: 20px;
+
+/* Ionic Overrides */
+$dark: $color-dark-1;
