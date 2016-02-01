@@ -24,8 +24,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 body {
-  background-color: $stable;
-  color: $light;
+  background-color: $color-blue-2;
+  color: $color-black;
   font-family: Georgia;
   font-size: 30px;
 }
@@ -80,10 +80,6 @@ input {
   border:1px solid #f03;
   border-radius:10px;
 }
-
-.button:hover {
-  background-color:rgba(255,0,51,0.8);
- }
 
  .game-letters  {
   display: inline;
