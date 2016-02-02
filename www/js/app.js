@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -32,15 +32,15 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
-    url: '/tab',
+  .state('hangman', {
+    url: '/hangman',
     abstract: true,
-    templateUrl: 'templates/tabs.html'
+    templateUrl: 'templates/hangman.html'
   })
 
   // Each tab has its own nav history stack:
 
-  .state('tab.game', {
+  .state('hangman.game', {
     url: '/game',
     views: {
       'game': {
@@ -50,16 +50,16 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
     }
   })
 
-  .state('tab.chats', {
+  .state('hangman.chats', {
       url: '/chats',
       views: {
         'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
+          templateUrl: 'templates/hangman-chats.html',
           controller: 'ChatsCtrl'
         }
       }
     })
-    .state('tab.chat-detail', {
+    .state('hangman.chat-detail', {
       url: '/chats/:chatId',
       views: {
         'tab-chats': {
@@ -69,17 +69,17 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
       }
     })
 
-  .state('tab.account', {
-    url: '/account',
+  .state('hangman.profile', {
+    url: '/profile',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'profile': {
+        templateUrl: 'templates/profile.html',
+        controller: 'ProfileCtrl'
       }
     }
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/game');
+  $urlRouterProvider.otherwise('/hangman/game');
 
 });

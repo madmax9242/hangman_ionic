@@ -1,37 +1,27 @@
 <ion-view view-title="Hangman">
   <ion-content class="padding game-body">
 
-    <section class="game-play">
-
-      <figure>
-        <span>Guesses Left:</span> <span class="guesses-left">8</span>
-      </figure>
-
-      <aside>
-        <div>
-          <span>Letters Guessed Already:</span>
-          <span class="guessed-letters"></span>
+    <div id="game_play_area">
+        <div id="hangman_area">
+          <span>Guesses Left:</span> <span id="guesses_left"></span>
         </div>
-
-        <div>
-          <label for="letter">Guess a Letter:</label>
-          <input type="text" name="letter" id="letter" max-length="1" class="guess-box" />
+        <div id="letter_area">
+          <div id="letters_used">
+            <span>Letters Guessed Already:</span>
+            <div id="guessed_letters"></div>
+          </div>
+          <div id="guess_box">
+            <span>Guess a Letter:</span>
+            <input id="letter_field" type="text" />
+          </div>
         </div>
-      </aside>
-    </section>
-
-    <div class="game-word"><span id="finalWord"></span></div>
-
-    <section class="game-controls">
-      <button class="button" id="give-up">Give Up</button>
-      <button class="button" id="new-game">New Game</button>
-    </section>
-    <script>
-
-      $(document).ready(function() {
-        newGame();
-      })
-    </script>
+      </div>
+      <div id="word_string"></div>
+      <div id="game_control_area">
+        <input id="give_up_button" class="button" type="submit" value="Give up"/>
+        <input id="reset_button" class="button" type="submit" value="Reset Game" ng-click="newGame()"/>
+      </div>
+    </div>
 
   </ion-content>
 </ion-view>
