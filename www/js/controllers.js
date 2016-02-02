@@ -16,6 +16,7 @@ angular.module('starter.controllers', [])
     Chats.remove(chat);
   };
 })
+.controller('GameCtrl', function($scope) {})
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
